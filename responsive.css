@@ -645,6 +645,9 @@ font-size: 14px;
     background-image: url(img/why2.jpg);
   }
   /*=================special==========================  */
+  .special-tittle{
+    width: 62%;
+  }
   .special>p{
     font-size: 12px;
     font-weight: bold;
