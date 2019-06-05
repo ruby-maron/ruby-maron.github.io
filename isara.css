@@ -1,0 +1,908 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic ProN", sans-serif;
+}
+body a{
+  text-decoration:none;
+}
+main{
+  width: 100%;
+  overflow: hidden;
+}
+h1,h2,h3,h4,h5,h6{
+  font-weight: bold;
+}
+h2{
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+ul,li,h1,h2,h3,h4,h5,h6{
+margin:0;
+padding:0;
+border:0;
+outline:0;
+/* vertical-align:baseline;
+background:transparent; */
+}
+.br-767{
+  display: none;
+}
+
+/* ==== header =========== */
+header{
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+}
+.header-left{
+  display: flex;
+}
+.header-logo img{
+  width: 125px;
+  height: auto;
+  /* display: block; */
+}
+.header-left p{
+  margin:22px 0 0 5px;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.header-right{
+  width: 28%;
+}
+.header-right .min-768 a{
+    background-color: #DA6B64;
+    padding: 12px 0;
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    display: block;
+    text-align: center;
+}
+.header-right .min-768 a:hover{
+  background-color: #c43113;
+}
+.max-767{
+  display: none;
+}
+/*========top==================  */
+
+.top{
+  padding-top: 75px;
+  background-image: url(img/back1.jpg);
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* ↑このpadding-top指定はheaderがfixedで独立したため、
+headerの高さ分付与した。 */
+.top-contents{
+  width: 360px;
+  height: 350px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.top-p1{
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: bold;
+}
+.top-logo img{
+  width: 330px;
+  height: auto;
+  font-weight: bold;
+  color: #333333;
+}
+.top-p2{
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: bold;
+  color: #333333;
+  margin-top: 50px;
+}
+/*====contact-wrapper=============  */
+.contact-wrapper{
+  background-color: #EBB94C;
+  text-align: center;
+  color: white;
+  padding: 30px 0;
+  letter-spacing: 2px;
+}
+ .contact-wrapper .contact-btn{
+  display: inline-block;
+  width: 85%;
+  background-color: #DA6B64;
+  padding: 30px 0;
+  border-radius: 50px;
+  font-size: 28px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: none;
+  color: inherit;
+  margin: 25px 0 50px;
+  text-decoration: none;
+}
+.contact-wrapper .contact-btn:hover{
+  background-color: #c43113;
+}
+.contact-p1{
+  font-size: 20px;
+  font-weight: bold;
+}
+.contact-red{
+  font-size: 18px;
+  font-weight: bold;
+  color: #c7254e;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+}
+.contact-p3{
+  font-size: 21px;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.sns a{
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 0 7px;
+}
+.sns .twitter{
+  background-color: #1A94E0;
+}
+.like,.share{
+  background-color: #4267B2;
+}
+/*=== freedom ==================  */
+.freedom{
+  background-image: url(img/back2.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  /* margin-top: 80px; */
+  padding: 50px 0 150px;
+  letter-spacing: 2px;
+}
+.kagikakko{
+  position: relative;
+  width: 880px;
+  max-width: calc(100% - 40px);
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px 0;
+}
+  /*↑テクニックcalc
+  「」が880px以下になった場合、その範囲に収まるように。  */
+.kagikakko h2{
+  line-height: 40px;
+}
+.kagikakko::before{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-top: 4px solid #EBB94C;
+  border-left: 4px solid #EBB94C;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.kagikakko::after{
+  content: "";
+  width: 50px;
+  height: 50px;
+  border-bottom: 4px solid #EBB94C;
+  border-right: 4px solid #EBB94C;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+.freedom p{
+  font-size: 21px;
+  font-weight: 300;
+  line-height: 32px;
+}
+.freedom span{
+  background: linear-gradient(transparent 70%, #EBB94C 50%);
+  font-weight: bold;
+}
+/*========nomad-wrapper==================  */
+.nomad-wrapper{
+  position: relative;
+  background-color: #FEF5E0;
+  padding-top: 65px;
+  padding-bottom: 50px;
+}
+.maru-flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.maru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  vertical-align: top;
+  width: 80px;
+  height: 80px;
+  color: white;
+  background-color: #EBB94C;
+  position: absolute;
+  top: -40px;
+}
+.letter3 {
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+.nomad-wrapper>p{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin: 30px 0;
+}
+.nomad-skill-wrapper>p{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.nomad-skill-wrapper{
+  width: 95%;
+  margin: 0 auto;
+  padding: 35px 0;
+  background-color: white;
+  border: 2px  solid #EBB94C;
+  border-radius: 4px;
+}
+.skill-wrapper{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.skill{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skill img{
+  width: 50%;
+  height: auto;
+}
+.img-sm img{
+  width: 65%;
+}
+.img-smsm img{
+  width: 100%;
+}
+.skill p{
+  font-size: 12px;
+}
+/* =======isara-notteach===================== */
+.isara-notteach{
+  background-image: url(img/pc-type.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  font-weight: bold;
+  padding: 60px 0 50px;;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.isara-notteach>p{
+  font-size: 20px;
+}
+.isara-notteach>p:first-of-type{
+  margin-top: 30px;
+}
+.isara-notteach span{
+  color: #EBB94C;
+}
+.step-wrapper{
+  display: flex;
+  justify-content:space-between ;
+  width: 92%;
+  margin: 35px auto 0;
+}
+.step{
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  width: 32%;
+  padding: 30px 0;
+}
+.step h6{
+  color: white;
+  background-color: #EBB94C;
+  border-radius: 5px;
+  line-height: 26px;
+  width: 90%;
+  margin: 0 auto;
+}
+.step p:first-of-type{
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+/*========skillup================  */
+.skillup{
+  background-color: #006EA9;
+  text-align: center;
+  padding: 40px 0;
+}
+.skillup p{
+  margin-bottom: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.skillup span{
+  color:  #EBB94C;
+  }
+  /*======learn1================  */
+.learn1{
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 50px 0 40px;
+}
+.learn1-p1{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 35px 0;
+}
+.learn1 span{
+  font-size: 16px;
+}
+.learn1-image-wrapper{
+  display: flex;
+  justify-content:center;
+}
+.learn1-image-wrapper img{
+  width: 180px;
+  height: 180px;
+}
+.learn1-image-wrapper img+img{
+  margin-left: 35px;
+}
+.learn1-p2{
+  font-size: 16px;
+  margin-top: 30px;
+}
+/*======isara-merit===================  */
+.isara-merit{
+  background-color: #FEF5E0;
+  padding-top: 65px;
+  padding-bottom: 50px;
+  letter-spacing: 2px;
+}
+.merit-tittle p{
+  font-size: 20px;
+  font-weight: bold;
+}
+.merit-wrapper{
+  width: 90%;
+  margin: 40px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+.merit{
+  width: 30%;
+  text-align: justify;
+}
+.merit img{
+  width: 350px;
+  height: 180px;
+}
+.merit h5{
+  color: #EBB94C;
+  margin: 15px 0;
+}
+.saport{
+  width: 90%;
+  margin: 20px auto 0;
+  padding: 35px 0;
+  background-color: white;
+  border: 2px  solid #EBB94C;
+  border-radius: 4px;
+  text-align: center;
+}
+.saport h2{
+  color: #EBB94C;
+  margin-bottom: 20px;
+}
+.saport h5{
+  margin-bottom: 25px;
+}
+.saport p{
+  letter-spacing: 2px;
+  font-weight: bold;
+  line-height: 26px;
+}
+.merit-undertext{
+  font-size: 14px;
+  text-align: center;
+  margin-top: 30px;
+}
+/*======unei===================  */
+.unei {
+  background-image: url(img/memberback.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  padding: 80px 0;
+  text-align: center;
+}
+.unei>p{
+  margin-top: 40px;
+}
+.m-wrap1 img{
+  border-radius: 50%;
+}
+.member-wrap{
+  display: flex;
+  justify-content: center;
+}
+.member{
+  width: 380px;
+  border: 3px solid white;
+  padding: 40px 35px;
+  position: relative;
+  margin-top: 200px;
+}
+.member p:nth-of-type(3){
+  text-align: justify;
+  letter-spacing: 2px;
+}
+.member-margin{
+  margin-left: 30px;
+}
+.member img{
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+/* =========question============= */
+.question{
+  background-color: #EBB94C;
+  padding: 40px 0 30px;
+}
+.question-maru {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  background-color: white;
+  margin: 0 auto;
+}
+.maru-text {
+  font-size: 20px;
+  color: #EBB94C;
+}
+.question-tittle h2{
+  color: white;
+}
+.question-tittle::before{
+  border-top: 4px solid white;
+  border-left: 4px solid white;
+}
+.question-tittle::after{
+  border-bottom: 4px solid white;
+  border-right: 4px solid white;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+  border-top: 30px solid #EBB94C;
+  margin: 0 auto;
+}
+/*=======realize============  */
+.realize{
+  text-align: center;
+  padding: 20px 0 40px;
+  letter-spacing: 2px;
+}
+
+.realize-p1{
+  font-weight: bold;
+  margin-top: 20px;
+}
+.realize-p2{
+  font-size: 14px;
+  margin-top: 40px;
+}
+.adopt-wrap{
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+.adopt-wrap img{
+  width: 20%;
+  height: 20%;
+  border: 3px solid #EBB94C;
+}
+.adopt-message{
+  width: 40%;
+  text-align: justify;
+  color: #777777;
+  margin-left: 40px;
+}
+.adopt-p1{
+  font-size: 18px;
+}
+.adopt-p2{
+  font-size: 15px;
+  text-decoration: underline;
+}
+/*=======learn2================  */
+.learn2{
+  background-image: url(img/learn2.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 50px 0;
+  letter-spacing: 2px;
+  color: white;
+  font-weight: bold;
+}
+.learn2>p{
+  margin-top: 30px;
+}
+.learn2-con-wrap{
+  display: flex;
+  align-items:baseline;
+  justify-content: center;
+  margin-top: 50px;
+}
+.learn2-contents{
+  text-align: center;
+  width: 390px;
+  border: 2px solid #006EA9;
+  border-radius: 4px;
+}
+.learn2-contents h5{
+  background-color: #006EA9;
+  padding: 20px 0;
+}
+.learn2-contents ul{
+  background-color: white;
+  border-radius: 4px;
+}
+.learn2-contents li{
+  list-style: none;
+  color: black;
+  line-height: 26px;
+  padding: 10px 0;
+}
+.learn2-contents li+li{
+  border-top: 1px dotted silver;
+}
+.lc-margin{
+  margin-left: 30px;
+}
+/*========blue-message================  */
+.blue-message{
+  background-color: #006EA9;
+  text-align: center;
+  padding: 40px 0;
+}
+.blue-message p{
+  margin-bottom: 0;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+/*====attend===============  */
+.attend{
+  padding: 60px 0 35px;
+}
+.attend h2{
+  text-align: center;
+}
+.attend-image{
+  width: 80%;
+  margin: 45px auto 30px;
+  display: block;
+}
+.attend-contents{
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 20px 80px;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #FEF5E0;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+.attend-icon {
+  width: 15%;
+}
+.attend-icon img{
+  display: block;
+  margin: 0 auto;
+}
+.attend-icon p{
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+.attend-text{
+  width: 80%;
+}
+.kakukaku{
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+.sm{
+  font-size: 14px;
+}
+/*======why-Bangkok===========  */
+.why-Bangkok{
+  background-image: url(img/why.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+  letter-spacing: 2px;
+  padding: 50px 0 35px;
+}
+.why-wrap{
+  width: 90%;
+  margin: 0 auto;
+}
+
+.why-p1{
+  font-size: 12px;
+  margin: 25px 0;
+  font-weight: lighter;
+}
+.why-p2{
+margin-top: 25px;
+}
+.why-wrap li{
+  font-size: 14px;
+  list-style-position: inside;
+}
+.why-wrap li+li{
+  margin-top: 15px;
+}
+/*=================special==========================  */
+.special{
+  background-color: #F7C23C;
+  padding: 50px 0 35px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.special>p{
+  margin-top: 40px;
+}
+.special span{
+  color: white;
+}
+.special-con-wrap{
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  margin: 90px auto 0;
+  text-align: center;
+  padding: 50px 0 ;
+  position: relative;
+  border: 2px solid white;
+}
+.special-tittle{
+ position: absolute;
+ top: 0;
+ left: 26%;
+ padding: 0 1em;
+ margin: 0;
+ background-color: #F7C23C;
+ transform: translateY(-50%) translateX(1em);
+}
+.special-contents{
+  border-radius: 50%;
+  background-color: white;
+  width:250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.special-text{
+  font-size: 14px;
+  font-weight: bold;
+  width:80%;
+  height: 80%;
+  margin: 0 auto;
+}
+.tokuten{
+  color: #F7C23C;
+  font-size: 24px;
+  margin-bottom: 9px;
+  margin-top: 50px;
+}
+.max-767-special{
+  display: none;
+}
+/*======notvolunteer=============  */
+.notvolunteer{
+  background-image: url(img/novolunteer.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 50px 0 60px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.notvolunteer>p{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.notvolunteer-tittle h2{
+  color: white;
+}
+.notvolunteer-tittle::before{
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+}
+.notvolunteer-tittle::after{
+  border-bottom: 3px solid white;
+  border-right: 3px solid white;
+}
+/*======founder-message=================  */
+.founder-message{
+  text-align: center;
+  padding: 50px 0 60px;
+}
+.founder-message>p{
+  margin: 40px 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+.fm-wrap{
+  display: flex;
+  justify-content: center;
+}
+.fm-wrap img{
+  width: 17%;
+  height: 17%;
+  /* display: block; */
+}
+.founder-text{
+  text-align: justify;
+  width: 60%;
+  font-size: 14px;
+  margin-left: 30px;
+}
+.founder-text li{
+  list-style: none;
+}
+/*====request-form=======================  */
+.request-form{
+  background-color: #F7C23C;
+  text-align: center;
+  padding: 60px 0;
+}
+.request-form>p{
+  margin: 25px 0;
+}
+form{
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.input-privacy{
+  padding: 16px 10px;
+  border: none;
+  border-radius: 5px;
+}
+.input-privacy+.input-privacy{
+  margin-top: 20px;
+}
+textarea{
+  padding: 16px 0 40px 16px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 50px;
+}
+.submit {
+  margin-top: 40px;
+}
+.submit a{
+  font-size: 23px;
+  color: white;
+  background-color: #DA6B64;
+  padding: 12px 0;
+  border-radius: 50px;
+  display: block;
+  text-decoration: none;
+  letter-spacing: 17px;
+}
+/*======faq=============  */
+.faq{
+  padding: 60px 0;
+  letter-spacing: 2px;
+}
+.faq-question{
+  width: 80%;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+  padding: 16px 25px 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.answer{
+  width: 80%;
+  margin: 0 auto;
+  padding: 16px 25px 16px 20px;
+  font-weight: bold;
+  display: none
+}
+.faq-question h4{
+  color: inherit;
+  font-size: 20px;
+}
+.faq-question i{
+  color: #006EA9;
+  font-size: 18px;
+}
+.yazirushi {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-right: 5px solid lightgray;
+  border-bottom: 5px solid lightgray;
+  transform: rotate(45deg);
+}
+.faq-question+.faq-question{
+  margin-top: 5px;
+}
+/*=====footer================  */
+footer{
+  background-color: #ECECEC;
+  text-align: center;
+  padding: 35px 0 25px;
+}
+footer p{
+  font-size: 10px;
+}
