@@ -1,0 +1,734 @@
+@media (max-width:1190px) {
+  h2{
+    font-size: 24px;
+  }
+  /*===header======  */
+  .header-left p{
+    font-size: 12px;
+  }
+  .header-right{
+    width: 28%;
+  }
+  .header-right .min-768 a{
+    font-size: 12px;
+    letter-spacing: 0;
+  }
+  /*==top=====  */
+  .top-p1{
+    font-size: 24px;
+  }
+  .top-p2{
+    font-size: 14px;
+  }
+  .contact-wrapper .contact-btn{
+   font-size: 18px;
+   margin: 0 0 25px;
+ }
+  .contact-p1{
+    font-size: 16px;
+  }
+  .contact-red{
+    font-size: 14px;
+  }
+  .contact-p3{
+    font-size: 18px;
+  }
+  /*===freedom====  */
+.freedom p{
+  font-size: 16px;
+}
+/*===isara-notteach=======  */
+.isara-notteach>p{
+  font-size: 16px;
+}
+.step p:first-of-type{
+  font-size: 12px;
+}
+.step p+p{
+  font-size: 14px;
+}
+.step-wrapper{
+  flex-direction: column;
+  align-items: center;
+  width: 100%
+}
+.step{
+  width: 37%;
+  padding-bottom: 15px;
+}
+.step+.step{
+  margin-top: 20px;
+}
+/*===skillup======  */
+.skillup p{
+  font-size: 16px;
+}
+/*==learn1=====  */
+.learn1-p1{
+  font-size: 16px;
+}
+.learn1-p2{
+  font-size: 14px;
+}
+/*=isara-merit=====  */
+.merit-tittle p{
+  font-size: 16px;
+}
+.merit img{
+  width: 300px;
+  height: auto;
+}
+.merit h5{
+  font-size: 16px;
+  text-align: center;
+}
+.merit p{
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.saport h5{
+  font-size: 16px;
+}
+.saport p{
+  font-size: 14px;
+}
+.merit-undertext{
+  font-size: 12px;
+}
+/*====unei======  */
+.unei p{
+  font-size: 14px;
+}
+.member {
+  padding-top: 55px;
+}
+/*===question=====  */
+.question-tittle h2{
+  font-size: 18px;
+}
+/*=======realize============  */
+.realize-p1{
+  margin-top: 14px;
+  font-size: 14px;
+}
+.realize-p2{
+  font-size: 12px;
+}
+.adopt-wrap{
+  justify-content: flex-start;
+}
+.adopt-wrap img{
+  width: 20%;
+  height: 20%;
+}
+.adopt-message{
+  width: 40%;
+}
+/*===learn2=====  */
+.learn2>p{
+  font-size: 14px;
+}
+.learn2-contents{
+  width: 270px;
+}
+.learn2-contents h5{
+  font-size: 16px;
+}
+.learn2-contents li{
+  font-size: 14px;
+}
+/*===blue-message=====  */
+.blue-message p{
+  font-size: 16px;
+}
+/*==attend=====  */
+.attend-text{
+  width: 80%;
+}
+.attend-text p{
+font-size: 14px;
+}
+.attend-text .sm{
+  font-size: 12px;
+}
+/*==why-Bangkok====  */
+.why-wrap li{
+  font-size: 14px;
+}
+/*=================special==========================  */
+.special>p{
+  font-size: 14px;
+}
+/*======notvolunteer=============  */
+.notvolunteer>p{
+  font-size: 16px;
+}
+/*====founder-message========  */
+.founder-message>p{
+  font-size: 16px;
+}
+/*=request-form======  */
+.request-form>p{
+  font-size: 14px;
+}
+/* ==faq=== */
+.faq-question h4{
+  font-size: 16px;
+}
+}
+
+
+
+@media (max-width:991px) {
+  /*===isara-merit======  */
+  .merit-wrapper{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  }
+  .merit{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .merit-undertext{
+    width: 90%;
+    margin: 30px auto 0;
+    letter-spacing: normal;
+  }
+  /*====unei======  */
+  .member-wrap{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .member{
+    width: 80%;
+    padding: 45px 35px 30px;
+  }
+  .member p:nth-of-type(3){
+    letter-spacing: 1px;
+  }
+  .member-margin{
+    margin-left: 0;
+  }
+  /*=======realize============  */
+  .adopt-wrap{
+    justify-content: center;
+  }
+  .adopt-wrap img{
+    width: 28%;
+    height: 28%;
+  }
+  .adopt-message{
+    width: 60%;
+    margin-left: 30px;
+  }
+  /*===learn2=======  */
+  .learn2-con-wrap{
+    flex-direction: column;
+    align-items:center;
+  }
+  .learn2-contents{
+    width: 600px;
+  }
+  .lc-margin{
+    margin: 20px 0 0;
+  }
+  /*=================special==========================  */
+  .special-con-wrap{
+    flex-direction: column;
+    align-items: center;
+  }
+  .sp-respo-div{
+    margin-top: 20px;
+  }
+  /*======founder-message=================  */
+  .fm-wrap{
+    flex-direction: column;
+  }
+  .fm-wrap img{
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+  }
+  .founder-text{
+    width: 95%;
+    margin: 40px auto 0;
+  }
+
+
+
+}
+
+
+@media (max-width:880px) {
+  .learn1-image-wrapper img{
+    width: 20%;
+    height: 20%;
+  }
+  .learn1-image-wrapper{
+    justify-content:space-around;
+  }
+  .learn1-image-wrapper img+img{
+    margin-left: 0;
+  }
+}
+
+
+@media (max-width:767px){
+  h2{
+    font-size: 18px;
+  }
+  .br-767{
+    display: block;
+  }
+  .br-767none{
+    display: none;
+  }
+  .min-768{
+    display: none;
+  }
+  /* ↑767px以下は消すという事（768px以上で表示だから）
+  brと重複してしもた */
+  .kagikakko::before{
+    width: 30px;
+    height: 30px;
+  }
+  .kagikakko::after{
+    width: 30px;
+    height: 30px;
+  }
+  /*=====header======  */
+  header{
+    padding: 0 0 0 20px;
+    height: 60px;
+  }
+  .header-left{
+    flex-direction: column;
+  }
+  .header-logo img{
+    width: 90px;
+    height: auto;
+  }
+  .header-logo {
+    order: 2;
+  }
+  .header-left p{
+    font-size: 10px;
+    order: 1;
+    margin: 0;
+  }
+  .header-right{
+    width: 80px;
+    height: 100%;
+    background-color: #DA6B64;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .max-767{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+  }
+  .max-767 i{
+    font-size: 24px;
+  }
+  .max-767 a{
+    font-size: 12px;
+    font-weight: normal;
+    color: inherit;
+  }
+  /*==top===  */
+  .top{
+    background-image: url(img/top-767.jpg);
+    height: 380px;
+    padding-top: 130px;
+  }
+  .top-p1{
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+  }
+  .top-p2{
+    font-size: 15px;
+    margin-top: 35px;
+  }
+  .top-contents{
+    height: 340px;
+  }
+  /*==contact-wrapper======  */
+  .contact-wrapper .contact-btn{
+   width: 95%;
+   padding: 15px 0;
+ }
+  .contact-p1{
+    font-size: 15px;
+  }
+  .contact-red{
+    font-size: 14px;
+  }
+ .contact-p3{
+    font-size: 15px;
+  }
+  /*==freedom====  */
+  .freedom{
+    padding-bottom: 75px;
+  }
+  .freedom-p-wrap{
+    width: 300px;
+    margin: 0 auto;
+  }
+  .freedom p{
+    font-size: 15px;
+    letter-spacing: normal;
+  }
+  /*==nomad-wrapper====-  */
+  .maru {
+    width: 60px;
+    height: 60px;
+    color: white;
+    top: -30px;
+  }
+  .letter3 {
+    font-size: 12px;
+    letter-spacing: normal;
+  }
+  .nomad-skill-wrapper>p,.nomad-wrapper>p{
+    font-size: 15px;
+  }
+  .nomad-skill-wrapper{
+    padding: 15px 0 25px;
+  }
+  .skill-wrapper{
+    width: 85%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .skill+.skill{
+    margin-left: 15px;
+  }
+  .skill p{
+    font-size: 10px;
+  }
+  .skill img{
+    width: 30%;
+    height: auto;
+  }
+  .img-sm img{
+    width: 45%;
+  }
+  .img-smsm img{
+    width: 70%;
+  }
+  /*===isara-notteach=======  */
+  .isara-notteach>p{
+    font-size: 13px;
+  }
+  .step p+p{
+    font-size: 12px;
+    margin-bottom: 0;
+  }
+  .step{
+    width: 95%;
+    padding: 15px 0;
+  }
+  .step p:first-of-type{
+    margin:15px 0 10px;
+  }
+  .step h6{
+    font-size: 12px;
+    line-height: 24px;
+  }
+  /*===skillup======  */
+  .skillup{
+    padding: 20px 0;
+  }
+  .skillup p{
+    font-size: 12px;
+  }
+  /*==learn1=====  */
+  .learn1-p1{
+    font-size: 15px;
+  }
+  .learn1-p2{
+    font-size: 12px;
+  }
+  /*===isara-merit======  */
+  .merit-tittle p{
+    font-size: 15px;
+  }
+  .merit h5{
+    font-size: 15px;
+  }
+  .merit p{
+    font-size: 12px;
+  }
+  .merit-wrapper{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  }
+  .merit{
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .merit img{
+    display: none;
+  }
+  .merit-backimage{
+    width: 100%;
+    height: 130px;
+    background-size: cover;
+    background-position: center center;
+  }
+  .merit-backimage1{
+    background-image: url(img/merit1.jpg);
+  }
+  .merit-backimage2{
+    background-image: url(img/merit2.jpg);
+  }
+  .merit-backimage3{
+    background-image: url(img/merit3.jpg);
+  }
+  .saport{
+    width: 90%;
+    margin: 20px auto 0;
+    padding: 20px 10px;
+    background-color: white;
+    border: 2px  solid #EBB94C;
+    border-radius: 4px;
+    text-align: center;
+  }
+  .saport h5{
+    margin-bottom: 15px;
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .saport p{
+    letter-spacing: normal;
+    font-size: 10px;
+    line-height: 15px;
+    margin-bottom: 0;
+  }
+
+  .merit-undertext{
+    width: 95%;
+  }
+  /*====unei======  */
+  .unei{
+    padding: 25px 0;
+  }
+  .unei p{
+    font-size: 12px;
+  }
+  .member{
+    width: 95%;
+    padding: 35px 10px 15px;
+    margin-top: 130px;
+  }
+  .member img{
+    width: 120px;
+    height: 120px;
+  }
+  /* =========question============= */
+  .question{
+    padding: 20px 0 15px;
+  }
+  .question-maru {
+    width: 65px;
+    height: 65px;
+  }
+  .maru-text {
+    font-size: 14px;
+  }
+  .question-tittle h2{
+    font-size: 14px;
+  }
+  .triangle {
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #EBB94C;
+  }
+  /* ==realize=== */
+  .realize-p2{
+    font-size: 12px;
+  }
+  /*===learn2=======  */
+  .learn2>p{
+    font-size: 12px;
+  }
+  .learn2-contents{
+    width: 95%;
+  }
+  .learn2-contents h5{
+    font-size: 15px;
+  }
+  .learn2-contents li{
+    font-size: 12px
+  }
+  /*===blue-message=====  */
+  .blue-message p{
+    font-size: 15px;
+    letter-spacing: 1px;
+  }
+  /*====attend===============  */
+  .attend-image{
+    display: none;
+  }
+  .attend-contents{
+    justify-content: center;
+    padding:10px 20px 10px 10px;
+  }
+  /*↑このcolumnはJavascriptかjQeryなど使い、
+  動きをつけ、クリック時テキストが出てくる際、
+  縦並びにする為。現状は不要  */
+  .attend-contents:first-of-type{
+    margin-top: 50px;
+  }
+  .attend-contents:nth-child(n+4){
+    margin-top: 5px;
+  }
+  /*↑２個目以降の要素を指定  */
+  .attend-icon {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .attend-icon img{
+    display: block;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+  }
+  .attend-icon p{
+    text-align: left;
+    font-size: 15px;
+    margin: 0 0 0 20px;
+  }
+  .attend-text{
+    width: 100%;
+  }
+  .kakukaku{
+    display: none;
+  }
+  .yazirushi2 a{
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border-right: 4px solid black;
+    border-bottom:4px solid black;
+    transform: rotate(45deg);
+  }
+  .yazirushi2{
+    display: flex;
+    align-items: center;
+  }
+  /*==why-Bangkok====  */
+  .why-p1{
+    font-size: 12px;
+  }
+  .why-wrap li{
+    font-size: 12px;
+  }
+  .why-p2{
+  font-size: 15px;
+  }
+  .why-Bangkok{
+    background-image: url(img/why2.jpg);
+  }
+  /*=================special==========================  */
+  .special>p{
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .sp-respo-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .max-767-special{
+    display: block;
+    color: white;
+    font-size: 12px;
+    width: 60%;
+    margin: 0 0 0 30px;
+    text-align: left;
+  }
+  .special-contents{
+    width: 60px;
+    height: 60px;
+  }
+  .tokuten{
+    font-size: 12px;
+    margin: 8px;
+  }
+  .special-con-wrap{
+    flex-direction: column;
+    align-items: stretch;
+  }
+  /*======notvolunteer=============  */
+  .notvolunteer{
+    background-image: url(img/novolunteer2.jpg);
+  }
+  .notvolunteer>p{
+    font-size: 12px;
+    margin-top: 30px;
+  }
+
+  .notvolunteer-tittle h2{
+    color: white;
+  }
+  .notvolunteer-tittle::before{
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+  }
+  .notvolunteer-tittle::after{
+    border-bottom: 3px solid white;
+    border-right: 3px solid white;
+  }
+  /*==request-form===  */
+  form{
+    width: 95%;
+  }
+  /*======faq=============  */
+  .faq-question{
+    width: 95%;
+    padding: 0 10px 10px;
+  }
+  .faq-question h4{
+    font-size: 14px;
+  }
+  .faq-question i{
+    color: #006EA9;
+    font-size: 14px;
+  }
+  .yazirushi a{
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-right: 5px solid lightgray;
+    border-bottom: 5px solid lightgray;
+    transform: rotate(45deg);
+  }
+  .faq-question+.faq-question{
+    margin-top: 5px;
+  }
+}
+
+@media (max-width:479px) {
+  .adopt-p1{
+    font-size: 14px;
+  }
+  .adopt-p2{
+    font-size: 12px;
+
+  }
+}
