@@ -723,14 +723,20 @@ margin-top: 25px;
   border: 2px solid white;
 }
 .special-tittle{
- position: absolute;
+ /* position: absolute;
  top: 0;
  left: 26%;
  padding: 0 1em;
  margin: 0;
  background-color: #F7C23C;
- transform: translateY(-50%) translateX(1em);
+ transform: translateY(-50%) translateX(1em); */
+ position: absolute;
+ bottom: 98%;
+ left: 50%;
+ background-color: #F7C23C;
+ transform: translate(-50%, 20%);
 }
+/* ↑こうしないと、iPhone7サイズで、天地中央にならない */
 .special-contents{
   border-radius: 50%;
   background-color: white;
