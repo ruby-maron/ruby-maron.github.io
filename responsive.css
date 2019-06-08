@@ -584,12 +584,33 @@ font-size: 14px;
     display: none;
   }
   .attend-contents{
-    justify-content: center;
-    padding:10px 20px 10px 10px;
+    flex-direction: column;
+    position: relative;
+    padding: 10px 15px;
   }
-  /*↑このcolumnはJavascriptかjQeryなど使い、
-  動きをつけ、クリック時テキストが出てくる際、
-  縦並びにする為。現状は不要  */
+  .yazirushi2{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 11px;
+    height: 11px;
+    display: inline-block;
+    border-right: 4px solid black;
+    border-bottom:4px solid black;
+    transform: rotate(45deg);
+  }
+  .yazirushi2{
+    display: flex;
+    align-items: center;
+  }
+  .attend-text{
+    width: 95%;
+    margin-top: 20px;
+  }
+  .attend-text p{
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
   .attend-contents:first-of-type{
     margin-top: 50px;
   }
@@ -613,24 +634,10 @@ font-size: 14px;
     font-size: 15px;
     margin: 0 0 0 20px;
   }
-  .attend-text{
-    width: 100%;
-  }
   .kakukaku{
     display: none;
   }
-  .yazirushi2 a{
-    width: 11px;
-    height: 11px;
-    display: inline-block;
-    border-right: 4px solid black;
-    border-bottom:4px solid black;
-    transform: rotate(45deg);
-  }
-  .yazirushi2{
-    display: flex;
-    align-items: center;
-  }
+
   /*==why-Bangkok====  */
   .why-p1{
     font-size: 12px;
@@ -706,20 +713,16 @@ font-size: 14px;
     width: 95%;
     padding: 0 10px 10px;
   }
+  .answer{
+    width: 95%;
+    font-size: 12px;
+  }
   .faq-question h4{
     font-size: 14px;
   }
   .faq-question i{
     color: #006EA9;
     font-size: 14px;
-  }
-  .yazirushi a{
-    display: inline-block;
-    width: 13px;
-    height: 13px;
-    border-right: 5px solid lightgray;
-    border-bottom: 5px solid lightgray;
-    transform: rotate(45deg);
   }
   .faq-question+.faq-question{
     margin-top: 5px;
