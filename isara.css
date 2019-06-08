@@ -662,6 +662,7 @@ headerの高さ分付与した。 */
 .attend-text{
   width: 80%;
 }
+
 .kakukaku{
   display: block;
   width: 60%;
@@ -877,6 +878,10 @@ textarea{
   align-items: center;
 }
 
+.fq-wrap:hover{
+  cursor: pointer;
+}
+
 .answer{
   width: 80%;
   margin: 0 auto;
@@ -900,7 +905,8 @@ textarea{
   border-bottom: 5px solid lightgray;
   transform: rotate(45deg);
 }
-.faq-question+.faq-question{
+
+.fq-wrap+.fq-wrap{
   margin-top: 5px;
 }
 /*=====footer================  */
