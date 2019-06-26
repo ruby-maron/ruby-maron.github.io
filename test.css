@@ -8,5 +8,5 @@ filter: grayscale(0);
 /* box-shadow: 1px 1px 8px rgba(125,125,125,0.9); */
 }
 p{
-  color: red;
+  font-size: 30px;
 }
